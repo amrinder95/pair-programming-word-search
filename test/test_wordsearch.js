@@ -35,4 +35,10 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return undefined if an empty array is passed as an argument", function () {
+    const result = wordSearch([
+      []
+    ], "WORD");
+  })
 });
